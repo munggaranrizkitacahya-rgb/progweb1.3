@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galeri Produk</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: sans-serif;
+      background: #f1f5f9;
+      padding: 40px;
+    }
+
+    .galeri {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      width: 250px;
+      margin: 20px;
+      position: relative; 
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    }
+
+    .item img {
+      width: 100%;
+      display: block;
+    }
+
+    .label {
+      background: #ff5722;
+      color: white;
+      padding: 6px 12px;
+      position: absolute; 
+      top: 0;
+      left: 0;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="galeri">
+    <div class="item">
+      <span class="label">Baru</span>
+      <img src="https://i.pinimg.com/1200x/41/76/2d/41762dae848401da3dee4c94d8cd970d.jpg" alt="Tas Baru" />
+    </div>
+    <div class="item">
+      <span class="label">Baru</span>
+      <img src="https://i.pinimg.com/736x/75/cc/f7/75ccf749f56f008061fe4d504cf54c22.jpg" alt="Tas Baru" />
+    </div>
+    <div class="item">
+      <span class="label">Baru</span>
+      <img src="https://i.pinimg.com/1200x/67/d6/fd/67d6fd3bbfd990ce3d6723787a92b879.jpg" alt="Tas Baru" />
+    </div>
+  </div>
+</body>
+</html>
